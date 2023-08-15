@@ -75,4 +75,29 @@ FULL OUTER JOIN ['2019$'] ON ['2019$'].[Product code]=['2020$'].[Product code]
 WHERE ['2019$'].[Product code] IS NULL
 
 -- We find that 1509625 units were on new products in 2020
+-- Now we find the product with the biggest increase in 2020 compared to 2019
+SELECT derived.[Product code],
+	SUM(Growth) AS Diff1920
+FROM(
+	SELECT ['2020$'].[Product code], 
+		SUM(['2020$'].[Delivery amount]) AS Growth
+	FROM ['2020$']
+	GROUP BY ['2020$'].[Product code]
+	
+	UNION
+
+	SELECT ['2019$'].[Product code], 
+		-SUM(['2019$'].[Delivery amount]) AS Growth
+	FROM ['2019$']
+	GROUP BY ['2019$'].[Product code] 
+	) AS derived
+inner join ['2019$']
+ON derived.[Product code]=['2019$'].[Product code]
+GROUP BY derived.[Product code]
+ORDER BY Diff1920 DESC;
+
+-- We can see that the first three products with the biggest increase in 2020 compared to 2019 are 234028 with a 
+-- delivery amount difference of 355488, 495720 with a delivery amount difference of 74591, and 494843  with a delivery 
+-- amount difference of 53554.
+
 
