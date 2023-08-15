@@ -59,10 +59,20 @@ SELECT COUNT([Client ID]) AS ClientNumber
 FROM ['2020$']
 
 -- We find the new clients in 2020
+-- This involves only counting the Client IDs that can only be found in 2020 but not in 2019
 SELECT COALESCE(['2020$'].[Client ID], ['2019$'].[Client ID])
 FROM ['2020$']
 FULL OUTER JOIN ['2019$'] ON ['2019$'].[Client ID]=['2020$'].[Client ID]
 WHERE ['2020$'].[Client ID] IS NULL OR ['2019$'].[Client ID] IS NULL;
 -- we find that there are no new clients in the system 
 
--- this involves in only counting the Client IDs that con only be found in 2020 but not in 2019
+-- We now explore how much the seller earned on new products in 2020, 
+-- This involves adding delivery amounts from the rows that have product codes that are only found in the 2020 dataset
+
+SELECT SUM(['2020$'].[Delivery amount]) AS NewProductEarnings
+FROM ['2020$']
+FULL OUTER JOIN ['2019$'] ON ['2019$'].[Product code]=['2020$'].[Product code]
+WHERE ['2019$'].[Product code] IS NULL
+
+-- We find that 1509625 units were on new products in 2020
+
