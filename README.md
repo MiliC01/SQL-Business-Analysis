@@ -14,3 +14,4 @@ Using SQL we analyze these datasets and answer the following questions:
 1) How many new clients are in 2020?
 2) How much did the seller earn on new products in 2020?
 3) Find the first three products with the biggest increase in 2020 compared to 2019
+4) What other observations can you get from the data?
