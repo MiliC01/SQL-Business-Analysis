@@ -15,6 +15,8 @@ The data contains null values and has to be cleaned. We create two documents in 
 We start by downloading the data sets from Kaggle and uploading them to a new database called Business Analysis. We add the data sets by right-clicking the database type and under the [Tasks] tab select [import data...] 
 ![importing the data sets](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(769).png?raw=true)
 
+On the SQL Server Import and Export Wizard we select Microsoft Excel as the Data source option and select the file path where the Excel document is stored in File Explorer.
+
 first view the data set for 2019 and 2020 
 
 # Data Analysis
