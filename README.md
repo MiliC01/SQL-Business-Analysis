@@ -51,5 +51,15 @@ We find that 1509625 units were on new products in 2020
 ### 3) What is the average, minimum, and maximum delivery amount in 2019 and 2020?
 
 ![2019 average, minimum, and maximum delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(778).png?raw=true)
+
+We can see that for 2019, the average delivery amount is 35,093.89, the minimum delivery amount is 1267, and the maximum delivery amount is 65583 units.
+
 ![2020 average, minimum, and maximum delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(777).png?raw=true)
+
+For 2020, the average delivery amount is 33,227.37, the minimum delivery amount is 1308, and the maximum delivery amount is 65891 units.
+We can see that there is a greater dry amount in 2020. 
+
+### 4) What are the total delivery amounts for each client in 2019 and 2020?
+
+
 # Data Visualization
