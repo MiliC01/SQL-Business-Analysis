@@ -40,8 +40,12 @@ For this explorative data analysis, we look at:
 4) What are the total delivery amounts for each client in 2019 and 2020?
 5) 
 
-### 1)
+### 1) Are there new clients in 2020?
 We find that there are no new clients in 2020
+![2020 number of rows](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(775).png?raw=true)
+
+### 2) How much did the seller earn on new products in 2020?
+We find that 1509625 units were on new products in 2020
 
 
 # Data Visualization
