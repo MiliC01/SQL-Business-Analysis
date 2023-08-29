@@ -19,12 +19,17 @@ On the SQL Server Import and Export Wizard we select Microsoft Excel as the Data
 ![Selecting Data Source](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(770).png?raw=true)
 After this part, uploading the Excel documents to the database is simple and the data can be found under Tables. 
 
-We first view the data sets for 2019 and 2020. We can confirm by looking at the data sets that they have the same variables, we now check for null values in both data sets, and remove any rows with null values. We can see that there are null values in both data sets from the images below:
+We first view the data sets for 2019 and 2020. We can confirm by looking at the data sets that they have the same variables, we now check for null values in both data sets and remove any rows with null values. We can see that there are null values in both data sets from the images below:
+
 ![Null Values in 2019 data](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(754).png?raw=true)
 ![Null Values in 2020 Data](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(755).png?raw=true)
 
-After deleting the null values, we take another look at the data and we see that there are still null values, so we delete the rows where Order, number, Client ID, Product Code, and Date of Delivery are null. After this, we check that there are no null values and get the number of rows of each data set. We find that there are 271 rows in the 2019 data set, and 507 rows in the 20220 data set. 
+After deleting the null values, we take another look at the data and we see that there are still null values, so we delete the rows where Order, number, Client ID, Product Code, and Date of Delivery are null. After this, we check that there are no null values and get the number of rows of each data set. We find that there are 271 rows in the 2019 data set and 507 rows in the 20220 data set. 
 
+![2019 number of rows](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(773).png?raw=true)
+![2020 number of rows](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(774).png?raw=true)
+
+Following this data cleaning, we proceed to explore and analyze the data.
 
 # Data Analysis
 
