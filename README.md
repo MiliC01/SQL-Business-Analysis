@@ -42,10 +42,14 @@ For this explorative data analysis, we look at:
 
 ### 1) Are there new clients in 2020?
 We find that there are no new clients in 2020
-![2020 number of rows](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(775).png?raw=true)
+![2020 new clients](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(775).png?raw=true)
 
 ### 2) How much did the seller earn on new products in 2020?
 We find that 1509625 units were on new products in 2020
+![2020 new products](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(776).png?raw=true)
 
+### 3) What is the average, minimum, and maximum delivery amount in 2019 and 2020?
 
+![2019 average, minimum, and maximum delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(778).png?raw=true)
+![2020 average, minimum, and maximum delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(777).png?raw=true)
 # Data Visualization
