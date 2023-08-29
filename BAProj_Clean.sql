@@ -7,7 +7,7 @@ FROM [Business Analysis].[dbo].['2020$'];
 -- Checking for null values in both data sets, and removing any rows with null values--
 -- We see that when we try to get the Client's ID by increasing order we get null values for the first rows
 SELECT *
-FROM [Business Analysis].[dbo].['2019$'];
+FROM [Business Analysis].[dbo].['2019$']
 ORDER BY [Client ID];
 
 SELECT *
