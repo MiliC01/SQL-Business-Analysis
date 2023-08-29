@@ -12,7 +12,8 @@ The data contains null values and has to be cleaned. We create two documents in 
 
 # Data Cleaning
 
-We start by downloading the data sets from Kaggle and uploading them to a new database called Business Analysis. We add the data sets by right-clicking the database type and under the [Tasks] tab select [import data...]
+We start by downloading the data sets from Kaggle and uploading them to a new database called Business Analysis. We add the data sets by right-clicking the database type and under the [Tasks] tab select [import data...] 
+![importing the data sets](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(769).png?raw=true)
 
 first view the data set for 2019 and 2020 
 
