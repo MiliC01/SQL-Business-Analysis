@@ -16,8 +16,11 @@ We start by downloading the data sets from Kaggle and uploading them to a new da
 ![importing the data sets](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(769).png?raw=true)
 
 On the SQL Server Import and Export Wizard we select Microsoft Excel as the Data source option and select the file path where the Excel document is stored in File Explorer.
+![Selecting Data Source](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(770).png?raw=true)
+After this part, uploading the Excel documents to the database is simple and the data can be found under Tables. 
 
-first view the data set for 2019 and 2020 
+We first view the data sets for 2019 and 2020. We can confirm by looking at the data sets that they have the same variables, we now check for null values in both data sets, and remove any rows with null values. We can see that there are null values in both data sets from the images below:
+
 
 # Data Analysis
 
