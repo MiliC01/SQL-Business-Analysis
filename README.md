@@ -33,4 +33,15 @@ Following this data cleaning, we proceed to explore and analyze the data.
 
 # Data Analysis
 
+For this explorative data analysis, we look at:
+1) Are there new clients in 2020?
+2) How much did the seller earn on new products in 2020?
+3) What is the average, minimum, and maximum delivery amount in 2019 and 2020?
+4) What are the total delivery amounts for each client in 2019 and 2020?
+5) 
+
+### 1)
+We find that there are no new clients in 2020
+
+
 # Data Visualization
