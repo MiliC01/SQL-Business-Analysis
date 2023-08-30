@@ -15,6 +15,28 @@ FULL OUTER JOIN ['2019$'] ON ['2019$'].[Product code]=['2020$'].[Product code]
 WHERE ['2019$'].[Product code] IS NULL
 
 -- We find that 1509625 units were on new products in 2020
+-- We find the average, minimum, and maximum delivery amount in 2019 and 2020
+SELECT AVG(['2019$'].[Delivery amount]) AS AvgDeliveryAmt, 
+	MIN(['2019$'].[Delivery amount]) AS MinDeliveryAmt, 
+	MAX(['2019$'].[Delivery amount]) AS MaxDeliveryAmt
+FROM ['2019$'];
+
+SELECT AVG(['2020$'].[Delivery amount]) AS AvgDeliveryAmt, 
+	MIN(['2020$'].[Delivery amount]) AS MinDeliveryAmt, 
+	MAX(['2020$'].[Delivery amount]) AS MaxDeliveryAmt
+FROM ['2020$'];
+
+-- We find the total delivery amounts for each client in 2019 and 2020
+SELECT ['2019$'].[Client ID],SUM(['2019$'].[Delivery amount]) AS TotDeliveryAmt
+FROM ['2019$']
+GROUP BY [Client ID]
+ORDER BY TotDeliveryAmt DESC;
+
+SELECT ['2020$'].[Client ID],SUM(['2020$'].[Delivery amount]) AS TotDeliveryAmt
+FROM ['2020$']
+GROUP BY [Client ID]
+ORDER BY TotDeliveryAmt DESC;
+
 -- Now we find the product with the biggest increase in 2020 compared to 2019
 SELECT derived.[Product code],
 	SUM(Growth) AS Diff1920
