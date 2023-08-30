@@ -90,26 +90,27 @@ GROUP BY Derived.[Client ID]) AS Tab
 WHERE Tab.Diff < 0
 	
 -- Now we find the product with the biggest increase in 2020 compared to 2019
-SELECT derived.[Product code],
-	SUM(Growth) AS Diff1920
-FROM(
-	SELECT ['2020$'].[Product code], 
-		SUM(['2020$'].[Delivery amount]) AS Growth
-	FROM ['2020$']
-	GROUP BY ['2020$'].[Product code]
-	
-	UNION
+CREATE TABLE #Temp_merge (
+ProductCode int)
 
-	SELECT ['2019$'].[Product code], 
-		-SUM(['2019$'].[Delivery amount]) AS Growth
-	FROM ['2019$']
-	GROUP BY ['2019$'].[Product code] 
-	) AS derived
-inner join ['2019$']
-ON derived.[Product code]=['2019$'].[Product code]
-GROUP BY derived.[Product code]
-ORDER BY Diff1920 DESC;
+INSERT INTO #Temp_merge
+SELECT ['2020$'].[Product code]
+FROM ['2020$']
+INNER JOIN ['2019$']
+	ON ['2020$'].[Product code] = ['2019$'].[Product code]
+GROUP BY ['2020$'].[Product code]
 
--- We can see that the first three products with the biggest increase in 2020 compared to 2019 are 234028 with a 
--- delivery amount difference of 355488, 495720 with a delivery amount difference of 74591, and 494843  with a delivery 
--- amount difference of 53554.
+SELECT *
+FROM (SELECT SUM(Derived.growth) AS GDiff, Derived.[Product code]
+	FROM (SELECT ['2019$'].[Product code], SUM(DISTINCT(['2019$'].[Delivery amount])) AS Growth
+			FROM ['2019$']
+			GROUP BY ['2019$'].[Product code]
+			UNION ALL
+			SELECT ['2020$'].[Product code], - SUM(DISTINCT(['2020$'].[Delivery amount])) AS growth
+			FROM ['2020$']
+			GROUP BY ['2020$'].[Product code]) AS Derived
+	GROUP BY Derived.[Product code]) AS Diff
+RIGHT OUTER JOIN #Temp_merge
+	ON Diff.[Product code] = #Temp_Merge.ProductCode
+ORDER BY Diff.GDiff
+-- We find that the product with the biggest increase is product 495720 with a product increase of 74591
