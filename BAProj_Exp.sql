@@ -37,6 +37,19 @@ FROM ['2020$']
 GROUP BY [Client ID]
 ORDER BY TotDeliveryAmt DESC;
 
+-- Finding the number of products ordered by each client in 2019 and 2020
+SELECT ['2019$'].[Client ID], COUNT(DISTINCT(['2019$'].[Product code])) AS Products
+FROM ['2019$']
+GROUP BY ['2019$'].[Client ID]
+ORDER BY Products DESC; 
+
+SELECT ['2020$'].[Client ID], COUNT(DISTINCT(['2020$'].[Product code])) AS Products
+FROM ['2020$']
+GROUP BY ['2020$'].[Client ID]
+ORDER BY Products DESC; 
+
+-- Finding the difference between the number of products ordered in 2019 and 2020  and finding how many clients ordered more in 2019 and 2020
+
 -- Now we find the product with the biggest increase in 2020 compared to 2019
 SELECT derived.[Product code],
 	SUM(Growth) AS Diff1920
