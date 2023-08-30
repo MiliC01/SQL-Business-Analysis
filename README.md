@@ -73,4 +73,7 @@ For 2020 the Client DI with the greatest total delivery amount is 7158 with a to
 ![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(784).png?raw=true)
 ![2020 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(783).png?raw=true)
 
+![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(787).png?raw=true)
+![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(785).png?raw=true)
+![2020 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(786).png?raw=true)
 # Data Visualization
