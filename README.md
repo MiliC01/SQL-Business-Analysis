@@ -38,7 +38,7 @@ For this explorative data analysis, we look at:
 2) How much did the seller earn on new products in 2020?
 3) What is the average, minimum, and maximum delivery amount in 2019 and 2020?
 4) What are the total delivery amounts for each client in 2019 and 2020?
-5) How many products were ordered by each client in 2019 and 2020?
+5) How many products were ordered by each client in 2019 and 2020, and how many clients ordered more products in 2019 and 2020?
 
 ### 1) Are there new clients in 2020?
 We find that there are no new clients in 2020
@@ -69,6 +69,8 @@ We can see that for 2019 the Client DI with the greatest total delivery amount i
 
 For 2020 the Client DI with the greatest total delivery amount is 7158 with a total delivery amount of 2035274. We can see that client 7167 is ninth on the 2020 list with a total delivery amount of 712610 indicating this client ordered less in 2020. 
 
-### 5) How many products were ordered by each client in 2019 and 2020 and what's the difference between both years?
+### 5) How many products were ordered by each client in 2019 and 2020 and how many clients ordered more products in 2019 and 2020?
+![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(784).png?raw=true)
+![2020 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(783).png?raw=true)
 
 # Data Visualization
