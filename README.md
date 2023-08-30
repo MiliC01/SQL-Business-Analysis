@@ -39,6 +39,7 @@ For this explorative data analysis, we look at:
 3) What is the average, minimum, and maximum delivery amount in 2019 and 2020?
 4) What are the total delivery amounts for each client in 2019 and 2020?
 5) How many products were ordered by each client in 2019 and 2020, and how many clients ordered more products in 2019 and 2020?
+6) Find the product with the biggest increase in 2020 compared to 2019
 
 ### 1) Are there new clients in 2020?
 We find that there are no new clients in 2020
@@ -70,10 +71,18 @@ We can see that for 2019 the Client DI with the greatest total delivery amount i
 For 2020 the Client DI with the greatest total delivery amount is 7158 with a total delivery amount of 2035274. We can see that client 7167 is ninth on the 2020 list with a total delivery amount of 712610 indicating this client ordered less in 2020. 
 
 ### 5) How many products were ordered by each client in 2019 and 2020 and how many clients ordered more products in 2019 and 2020?
+We can see the number of different products ordered by each client in 2019 below
 ![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(784).png?raw=true)
+We can see the number of different products ordered by each client in 2020 below
 ![2020 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(783).png?raw=true)
+Now we find the difference in the number of products ordered in 2020 compared to 2019 by each client
+![2020-2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(787).png?raw=true)
+We can see that most differences are positive meaning there were more products ordered by each client in 2020. Under closer inspection, we can see that 20 out of 21 clients bought more types of products in 2020 while only 1 out of 21 clients:
 
-![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(787).png?raw=true)
-![2019 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(785).png?raw=true)
-![2020 products ordered](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(786).png?raw=true)
+![2020-2019 products ordered count 2020](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(785).png?raw=true)
+
+![2020-2019 products ordered count 2019](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(786).png?raw=true)
+
+### 6) Find the product with the biggest increase in 2020 compared to 2019
+
 # Data Visualization
