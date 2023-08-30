@@ -60,6 +60,8 @@ For 2020, the average delivery amount is 33,227.37, the minimum delivery amount 
 We can see that there is a greater dry amount in 2020. 
 
 ### 4) What are the total delivery amounts for each client in 2019 and 2020?
+![2019 total delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(781).png?raw=true)
 
+![2020 total delivery amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(782).png?raw=true)
 
 # Data Visualization
