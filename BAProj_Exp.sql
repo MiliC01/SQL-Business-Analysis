@@ -48,8 +48,47 @@ FROM ['2020$']
 GROUP BY ['2020$'].[Client ID]
 ORDER BY Products DESC; 
 
--- Finding the difference between the number of products ordered in 2019 and 2020  and finding how many clients ordered more in 2019 and 2020
+-- Finding the difference between the number of products ordered in 2019 and 2020 and finding how many clients ordered more in 2019 and 2020
+SELECT Derived.[Client ID], 
+	SUM(Derived.Products) AS Diff
+FROM(SELECT ['2020$'].[Client ID], COUNT(DISTINCT(['2020$'].[Product code])) AS Products
+	FROM ['2020$']
+	GROUP BY ['2020$'].[Client ID]
+	UNION ALL
+	SELECT ['2019$'].[Client ID], -COUNT(DISTINCT(['2019$'].[Product code])) AS products
+	FROM ['2019$']
+	GROUP BY ['2019$'].[Client ID]) AS Derived
+GROUP BY Derived.[Client ID]
+ORDER BY Derived.[Client ID] DESC;
 
+-- We find the number of clients that ordered more in 2020 by finding the number of clients with a positive difference
+SELECT COUNT(Tab.[Client ID]) AS MoreIn2020
+FROM (SELECT Derived.[Client ID], 
+	SUM(Derived.Products) AS Diff
+FROM(SELECT ['2020$'].[Client ID], COUNT(DISTINCT(['2020$'].[Product code])) AS Products
+	FROM ['2020$']
+	GROUP BY ['2020$'].[Client ID]
+	UNION ALL
+	SELECT ['2019$'].[Client ID], -COUNT(DISTINCT(['2019$'].[Product code])) AS products
+	FROM ['2019$']
+	GROUP BY ['2019$'].[Client ID]) AS Derived
+GROUP BY Derived.[Client ID]) AS Tab 
+WHERE Tab.Diff > 0
+	
+-- We find the number of clients that ordered more in 2019 by finding the number of clients with a negative difference
+SELECT COUNT(Tab.[Client ID]) AS MoreIn2019
+FROM (SELECT Derived.[Client ID], 
+	SUM(Derived.Products) AS Diff
+FROM(SELECT ['2020$'].[Client ID], COUNT(DISTINCT(['2020$'].[Product code])) AS Products
+	FROM ['2020$']
+	GROUP BY ['2020$'].[Client ID]
+	UNION ALL
+	SELECT ['2019$'].[Client ID], -COUNT(DISTINCT(['2019$'].[Product code])) AS products
+	FROM ['2019$']
+	GROUP BY ['2019$'].[Client ID]) AS Derived
+GROUP BY Derived.[Client ID]) AS Tab 
+WHERE Tab.Diff < 0
+	
 -- Now we find the product with the biggest increase in 2020 compared to 2019
 SELECT derived.[Product code],
 	SUM(Growth) AS Diff1920
