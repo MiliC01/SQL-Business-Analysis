@@ -84,5 +84,10 @@ We can see that most differences are positive meaning there were more products o
 ![2020-2019 products ordered count 2019](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(786).png?raw=true)
 
 ### 6) Find the product with the biggest increase in 2020 compared to 2019
+![2020-2019 big increase](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(790).png?raw=true)
+
+We can see that the product with the biggest increase in 2020 compared to 2019 is product 495720 with a growth of 74591
 
 # Data Visualization
+
+We use Tableau to visualize the data from 2019 and 2020. In SQL we first export the clean data tables to an Excel file using the SQL Server Import and Export Wizard. Then following this we export the clean data to Tableau. 
