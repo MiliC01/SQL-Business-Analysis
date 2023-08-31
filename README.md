@@ -40,6 +40,8 @@ For this explorative data analysis, we look at:
 4) What are the total delivery amounts for each client in 2019 and 2020?
 5) How many products were ordered by each client in 2019 and 2020, and how many clients ordered more products in 2019 and 2020?
 6) Find the product with the biggest increase in 2020 compared to 2019
+7) Calculate the amount of deliveries for each month and each year.
+8) Calculate how many deliveries the seller made each month and for what amount.
 
 ### 1) Are there new clients in 2020?
 We find that there are no new clients in 2020
@@ -87,3 +89,10 @@ We can see that most differences are positive meaning there were more products o
 ![2020-2019 big increase](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(790).png?raw=true)
 
 We can see that the product with the biggest increase in 2020 compared to 2019 is product 495720 with a growth of 74591
+
+## Note
+For the following questions, I will use Python to analyze and visualize the data, below are the tables and plots. The code and original output can be found in PyBA.pdf in this repository
+
+### 7) Calculate the amount of deliveries for each month and each year.
+
+### 8) Calculate how many deliveries the seller made each month and for what amount.
