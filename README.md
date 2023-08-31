@@ -8,7 +8,7 @@ In this project, we clean and analyze data designed for business analysis which 
 - Date of delivery
 - Delivery amount
 
-The data contains null values and has to be cleaned. We create two documents in this repository called BAProj_Clean.sql and BAProj_Exp.sql where we document all the SQL queries where we clean and analyze the data. To visualize the data we will use Tableau.
+The data contains null values and has to be cleaned. We create two documents in this repository called BAProj_Clean.sql and BAProj_Exp.sql where we document all the SQL queries where we clean and analyze the data.
 
 # Data Cleaning
 
@@ -87,7 +87,3 @@ We can see that most differences are positive meaning there were more products o
 ![2020-2019 big increase](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(790).png?raw=true)
 
 We can see that the product with the biggest increase in 2020 compared to 2019 is product 495720 with a growth of 74591
-
-# Data Visualization
-
-We use Tableau to visualize the data from 2019 and 2020. In SQL we first export the clean data tables to an Excel file using the SQL Server Import and Export Wizard. Then following this we export the clean data to Tableau. 
