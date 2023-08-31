@@ -8,7 +8,7 @@ In this project, we clean and analyze data designed for business analysis which 
 - Date of delivery
 - Delivery amount
 
-The data contains null values and has to be cleaned. We create two documents in this repository called BAProj_Clean.sql and BAProj_Exp.sql where we document all the SQL queries where we clean and analyze the data.
+The data contains null values and has to be cleaned. We create two documents in this repository called BAProj_Clean.sql and BAProj_Exp.sql where we document all the SQL queries where we clean and analyze the data. Additionally, we use Python for more complex queries that involve data visualization where we use the MatPlotLib and Seaborn packages.
 
 # Data Cleaning
 
