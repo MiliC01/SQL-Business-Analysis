@@ -94,5 +94,19 @@ We can see that the product with the biggest increase in 2020 compared to 2019 i
 For the following questions, I will use Python to analyze and visualize the data, below are the tables and plots. The code and original output can be found in PyBA.pdf in this repository
 
 ### 7) Calculate the amount of deliveries for each month and each year.
+For this, we first create a pivot table for each year where we include the mean and median delivery amount for each month.
+
+![2019 Pivot Table](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(793).png?raw=true)
+![2020 Pivot Table](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(794).png?raw=true)
+
+Having done this, we plot the median delivery amount for each month for 2019 and 2020 obtained in the pivot tables to check if there is seasonality:
+![2019 and 2020 seasonality](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(796).png?raw=true)
+
+From the graphs, we can see that there is no cyclical pattern in the data indicating no seasonality in the delivery amount. 
 
 ### 8) Calculate how many deliveries the seller made each month and for what amount.
+We plot the delivery amount for 2019 and 2020:
+![Plot Delivery Amount](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(797).png?raw=true)
+From this plot, we can see that there was a surge in delivery amount in the summer months of 2019 between June and September. On the other hand, 2020 had a surge in delivery amounts that was much smaller between October and December. 
+![Plot Sum of Deliveries](https://github.com/MiliC01/SQL-Business-Analysis/blob/main/SQLBAProj/Screenshot%20(792).png?raw=true)
+The sum of deliveries by year is significantly smaller in 2019 compared to 2020. There could be factors as to why this is the case which could also explain why there is no seasonality which could be the price of individual items. 
